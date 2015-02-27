@@ -1,7 +1,7 @@
 {
   "name": "git-user-name",
-  "description": "Get the name of the current user from git config, at the project or global scope, depending on what git uses in the current context.",
-  "version": "0.1.0",
+  "description": "Get a user's name from git config at the project or global scope, depending on what git uses in the current context.",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/git-user-name",
   "author": {
     "name": "Jon Schlinkert",
@@ -14,31 +14,28 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/git-user-name/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/git-user-name/blob/master/LICENSE-MIT"
-    }
-  ],
-  "keywords": [
-    "git",
-    "github",
-    "user",
-    "username",
-    "user name",
-    "name"
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/git-user-name/blob/master/LICENSE"
+  },
+  "files": [
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "mocha -R test"
-  },
-  "devDependencies": {
-    "verb": "~0.2.0"
+    "test": "mocha"
   },
   "dependencies": {
-    "shelljs": "~0.2.6"
-  }
+    "shelljs": "^0.3.0"
+  },
+  "keywords": [
+    "git",
+    "github",
+    "name",
+    "user",
+    "username"
+  ]
 }
