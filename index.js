@@ -5,18 +5,17 @@
  * Licensed under the MIT License.
  */
 
-var shell = require('shelljs');
+var fs = require('fs');
+var path = require('path');
+var gitconfig = require('git-config-path');
+var parse = require('parse-git-config');
+var extend = require('extend-shallow');
 
-module.exports = function(cmd, options) {
-  if (typeof cmd === 'object') {
-    options = cmd;
-    cmd = null;
+module.exports = function(options) {
+  options = extend({cwd: '/', path: gitconfig}, options);
+  var config = parse.sync(options);
+  if (typeof config === 'object' && config.hasOwnProperty('user')) {
+    return config.user && config.user.name;
   }
-
-  var cmd = 'git config --get user.name';
-  var opts = options || {};
-  opts.silent = opts.silent || true;
-
-  var res = shell.exec(cmd, opts);
-  return res.output.trim();
+  return null;
 };
