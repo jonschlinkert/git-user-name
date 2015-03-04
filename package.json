@@ -1,7 +1,7 @@
 {
   "name": "git-user-name",
   "description": "Get a user's name from git config at the project or global scope, depending on what git uses in the current context.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/jonschlinkert/git-user-name",
   "author": {
     "name": "Jon Schlinkert",
@@ -41,5 +41,8 @@
     "name",
     "user",
     "username"
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
 }
