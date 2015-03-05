@@ -1,4 +1,4 @@
-# git-user-name [![NPM version](https://badge.fury.io/js/git-user-name.svg)](http://badge.fury.io/js/git-user-name)  [![Build Status](https://travis-ci.org/jonschlinkert/git-user-name.svg)](https://travis-ci.org/jonschlinkert/git-user-name) 
+# git-user-name [![NPM version](https://badge.fury.io/js/git-user-name.svg)](http://badge.fury.io/js/git-user-name) 
 
 > Get a user's name from git config at the project or global scope, depending on what git uses in the current context.
 
