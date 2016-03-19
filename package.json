@@ -1,23 +1,14 @@
 {
   "name": "git-user-name",
   "description": "Get a user's name from git config at the project or global scope, depending on what git uses in the current context.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "homepage": "https://github.com/jonschlinkert/git-user-name",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "http://github.com/https://github.com/jonschlinkert/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/git-user-name.git"
-  },
+  "author": "Jon Schlinkert (http://github.com/https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/git-user-name",
   "bugs": {
     "url": "https://github.com/jonschlinkert/git-user-name/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/git-user-name/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -44,5 +35,17 @@
     "name",
     "user",
     "username"
-  ]
+  ],
+  "verb": {
+    "related": {
+      "list": [
+        "git-config-path",
+        "parse-git-config",
+        "git-username",
+        "git-repo-name",
+        "git-branch",
+        "git-user-email"
+      ]
+    }
+  }
 }
