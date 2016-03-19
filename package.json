@@ -10,7 +10,8 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "utils.js"
   ],
   "main": "index.js",
   "engines": {
@@ -20,12 +21,15 @@
     "test": "mocha"
   },
   "dependencies": {
-    "extend-shallow": "^1.1.2",
+    "extend-shallow": "^2.0.1",
     "git-config-path": "^0.1.0",
-    "parse-git-config": "^0.3.0"
+    "isobject": "^2.0.0",
+    "lazy-cache": "^1.0.3",
+    "parse-git-config": "^0.4.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "gulp-format-md": "^0.1.7",
+    "mocha": "^2.4.5"
   },
   "keywords": [
     "git",
@@ -37,6 +41,15 @@
     "username"
   ],
   "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
     "related": {
       "list": [
         "git-config-path",
@@ -46,6 +59,12 @@
         "git-branch",
         "git-user-email"
       ]
+    },
+    "reflinks": [
+      "verb"
+    ],
+    "lint": {
+      "reflinks": true
     }
   }
 }
