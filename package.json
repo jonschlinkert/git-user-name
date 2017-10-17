@@ -4,14 +4,17 @@
   "version": "1.2.1",
   "homepage": "https://github.com/jonschlinkert/git-user-name",
   "author": "Jon Schlinkert (http://github.com/https://github.com/jonschlinkert)",
+  "contributors": [
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "宝码 (http://noyobo.com)"
+  ],
   "repository": "jonschlinkert/git-user-name",
   "bugs": {
     "url": "https://github.com/jonschlinkert/git-user-name/issues"
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "utils.js"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -22,14 +25,12 @@
   },
   "dependencies": {
     "extend-shallow": "^2.0.1",
-    "git-config-path": "^0.1.0",
-    "isobject": "^2.0.0",
-    "lazy-cache": "^1.0.3",
-    "parse-git-config": "^1.0.0"
+    "git-config-path": "^1.0.1",
+    "parse-git-config": "^1.1.1"
   },
   "devDependencies": {
-    "gulp-format-md": "^0.1.7",
-    "mocha": "^2.4.5"
+    "gulp-format-md": "^1.0.0",
+    "mocha": "^4.0.1"
   },
   "keywords": [
     "git",
@@ -52,12 +53,12 @@
     ],
     "related": {
       "list": [
-        "git-config-path",
-        "parse-git-config",
-        "git-username",
-        "git-repo-name",
         "git-branch",
-        "git-user-email"
+        "git-config-path",
+        "git-repo-name",
+        "git-user-email",
+        "git-username",
+        "parse-git-config"
       ]
     },
     "reflinks": [
