@@ -24,9 +24,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "extend-shallow": "^2.0.1",
-    "git-config-path": "^1.0.1",
-    "parse-git-config": "^1.1.1"
+    "git-config-path": "^2.0.0",
+    "parse-git-config": "^3.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^1.0.0",
